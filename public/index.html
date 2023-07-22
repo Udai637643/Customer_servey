@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="survey-container">
+    <div id="welcome-screen">
+      <h1>Welcome to Our Customer Survey!</h1>
+      <button id="start-button">Start Survey</button>
+    </div>
+    <div id="survey-screen">
+      <h2 id="question-number">Question 1/5</h2>
+      <h3 id="question">How satisfied are you with our products?</h3>
+      <div class="rating-slider">
+        <input type="range" min="1" max="5" value="3" class="slider" id="rating-slider">
+        <span id="rating-value">3</span>
+      </div>
+      <button id="prev-button" class="nav-button">Previous</button>
+      <button id="next-button" class="nav-button">Next</button>
+      <button id="skip-button" class="nav-button">Skip</button>
+      <textarea id="text-answer" placeholder="Your answer"></textarea>
+    </div>
+    <div id="thank-you-screen">
+      <h1>Thank you for your feedback!</h1>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
